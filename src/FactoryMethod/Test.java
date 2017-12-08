@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MCFuture;
+package FactoryMethod;
 
 /**
  *
@@ -11,11 +11,11 @@ package MCFuture;
  */
 public class Test {
     public static void main(String[] args) {
-        Director d = new Director();
+        Creator c = new ConcreteClass();
+        Padrino p = c.FactoryMethod("Product1");
+        Padrino p1 = c.FactoryMethod("Product2");
         
-       Burger b = (Hawai1)d.orderHamb("Hawaiana");
-       Burger b1 = (Double)d.orderHamb("Doble");
-       b.GetBurgerType();
-       b1.GetBurgerType();
+        
+       
     }
-}¡
+}

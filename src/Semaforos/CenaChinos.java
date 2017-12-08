@@ -5,12 +5,12 @@
  */
 package Semaforos;
 
-import java.awt.List;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import static java.lang.Math.random;
+
 import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 

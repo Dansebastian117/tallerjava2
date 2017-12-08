@@ -23,6 +23,7 @@ public class Test {
         strs.add("Zapato 9");
         
         Iterator1 itt = strs.getIterator();
+        
         while(itt.hasNext()){
             System.out.println(""itt.next());
         }

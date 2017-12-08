@@ -18,23 +18,25 @@ import java.net.Socket;
  */
 public class Server {
     public static void main(String[] args) {
-        
+          int port = 2242;
        
         try{
-             int port = 2221;
+           
               ServerSocket s = new ServerSocket(port);
-              Socket cliente = s.accept();
-              
+              Socket cliente = s.accept();         
               PrintWriter out = new PrintWriter(cliente.getOutputStream());
-              
               BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
-        String line;
+        String line = "Yo digo Hola";
         while((line = in.readLine())!= null);{
+            
             System.out.println(line);
             out.println("Servidor Repite"+ line);
         }
-        
+        cliente.close();
+        s.close();
         }catch (IOException ex){
+            
+        
             
         }
        

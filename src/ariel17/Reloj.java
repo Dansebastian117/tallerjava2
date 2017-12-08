@@ -15,7 +15,7 @@ public class Reloj {
     private Reloj(){
         
     }
-    public static Reloj get.(){
+    public static Reloj get(){
         if(ins == null){
             ins = new Reloj();
         }
